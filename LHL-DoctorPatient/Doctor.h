@@ -15,7 +15,7 @@
 @property(nonatomic,strong)NSString *specialization;
 @property(nonatomic,strong)NSMutableSet *patientList;
 
-@property(nonatomic,strong)NSDictionary *prescriptions;
+@property(nonatomic,strong)NSMutableDictionary *prescriptionsGiven;
 
 - (instancetype)initWithName:(NSString *)name specialization:(NSString *)specialization;
 

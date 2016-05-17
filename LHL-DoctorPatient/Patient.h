@@ -16,10 +16,10 @@
 @property(nonatomic,assign)int age;
 @property(nonatomic,strong)NSString *name;
 @property(nonatomic,assign)BOOL hasValidCard;
-@property(nonatomic,strong)NSMutableArray *hasCurrentSymptoms;
+@property(nonatomic,strong)NSArray *hasCurrentSymptoms;
 
 
-- (instancetype)initWithAge:(int)age name:(NSString *)name hasValidCard:(BOOL)hasValidCard hasCurrentSymptoms:(NSMutableArray *)hasCurrentSymptoms;
+- (instancetype)initWithAge:(int)age name:(NSString *)name hasValidCard:(BOOL)hasValidCard hasCurrentSymptoms:(NSArray *)hasCurrentSymptoms;
 
 - (void)visitDoctor:(Doctor *)doc;
 - (void)requestMeications:(Doctor *)doc;

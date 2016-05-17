@@ -13,7 +13,16 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
+        Doctor *doc1 = [[Doctor alloc] initWithName:@"Aaron" specialization:@"Pediatrician"];
         
+        Patient *pat1 = [[Patient alloc] initWithAge:10
+                                                name:@"Chris"
+                                        hasValidCard:YES
+                                  hasCurrentSymptoms:@[@"stomachache", @"cold"]];
+        
+        [pat1 visitDoctor:doc1];
+        [pat1 requestMeications:doc1];
+        NSLog(@"%@", doc1.prescriptionsGiven);
     }
     return 0;
 }

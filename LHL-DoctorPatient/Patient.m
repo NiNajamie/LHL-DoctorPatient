@@ -11,7 +11,7 @@
 
 @implementation Patient
 
-- (instancetype)initWithAge:(int)age name:(NSString *)name hasValidCard:(BOOL)hasValidCard hasCurrentSymptoms:(NSMutableArray *)hasCurrentSymptoms {
+- (instancetype)initWithAge:(int)age name:(NSString *)name hasValidCard:(BOOL)hasValidCard hasCurrentSymptoms:(NSArray *)hasCurrentSymptoms {
     
     self = [super init];
     if (self) {
@@ -32,9 +32,5 @@
     [doc giveMeds:self];
 }
 
-- (NSMutableArray *)hasCurrentSymptoms {
-    
-
-}
 
 @end
