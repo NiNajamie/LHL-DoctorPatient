@@ -15,9 +15,12 @@
 @property(nonatomic,strong)NSString *specialization;
 @property(nonatomic,strong)NSMutableSet *patientList;
 
+@property(nonatomic,strong)NSDictionary *prescriptions;
+
 - (instancetype)initWithName:(NSString *)name specialization:(NSString *)specialization;
 
 - (void)visitFromPatient:(Patient*)patient;
 
+- (void)giveMeds:(Patient*)patient;
 
 @end

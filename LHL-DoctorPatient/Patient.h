@@ -8,13 +8,20 @@
 
 #import <Foundation/Foundation.h>
 
+// call Doctor classs for making connection
+@class Doctor;
+
 @interface Patient : NSObject
 
 @property(nonatomic,assign)int age;
 @property(nonatomic,strong)NSString *name;
 @property(nonatomic,assign)BOOL hasValidCard;
+@property(nonatomic,strong)NSMutableArray *hasCurrentSymptoms;
 
-- (instancetype)initWithAge:(int)age name:(NSString *)name hasValidCard:(BOOL)hasValidCard;
 
+- (instancetype)initWithAge:(int)age name:(NSString *)name hasValidCard:(BOOL)hasValidCard hasCurrentSymptoms:(NSMutableArray *)hasCurrentSymptoms;
+
+- (void)visitDoctor:(Doctor *)doc;
+- (void)requestMeications:(Doctor *)doc;
 
 @end
