@@ -28,7 +28,7 @@
 }
 
 // if the patient has symptom(s) and also has a validCard, they can requestMedication
-- (void)requestMeications:(Doctor *)doc {
+- (void)requestMedications:(Doctor *)doc {
     [doc giveMeds:self];
 }
 

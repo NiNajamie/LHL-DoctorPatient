@@ -21,7 +21,7 @@ int main(int argc, const char * argv[]) {
                                   hasCurrentSymptoms:@[@"stomachache", @"cold"]];
         
         [pat1 visitDoctor:doc1];
-        [pat1 requestMeications:doc1];
+        [pat1 requestMedications:doc1];
         NSLog(@"%@", doc1.prescriptionsGiven);
     }
     return 0;

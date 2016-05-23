@@ -48,16 +48,16 @@
 - (void)addPrescription:(NSString *)prescription toPatient:(Patient *)patient {
     
     // is there the patient's name is inside the record, if not, return nil(create empty array of the prescription)
-    NSMutableArray *presciptionsGivenToThisPatient = [self.prescriptionsGiven[patient.name] mutableCopy];
+    NSMutableArray *prescriptionsGivenToThisPatient = [self.prescriptionsGiven[patient.name] mutableCopy];
     
     // if the array is nil=empty, add newPrescription in the arrayOfPrescription withput patient's name
-    if (presciptionsGivenToThisPatient == nil) {
-        presciptionsGivenToThisPatient = [NSMutableArray array];
+    if (prescriptionsGivenToThisPatient == nil) {
+        prescriptionsGivenToThisPatient = [NSMutableArray array];
     }
     
     // add the arrayOfPrescription in the dictionary with patient's name
-    [presciptionsGivenToThisPatient addObject:prescription];
-    self.prescriptionsGiven[patient.name] = presciptionsGivenToThisPatient;
+    [prescriptionsGivenToThisPatient addObject:prescription];
+    self.prescriptionsGiven[patient.name] = prescriptionsGivenToThisPatient;
     
 }
 

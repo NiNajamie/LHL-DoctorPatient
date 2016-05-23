@@ -22,6 +22,6 @@
 - (instancetype)initWithAge:(int)age name:(NSString *)name hasValidCard:(BOOL)hasValidCard hasCurrentSymptoms:(NSArray *)hasCurrentSymptoms;
 
 - (void)visitDoctor:(Doctor *)doc;
-- (void)requestMeications:(Doctor *)doc;
+- (void)requestMedications:(Doctor *)doc;
 
 @end
